@@ -4,11 +4,11 @@ Hello!
 
 This article about handling static jsp resources into fat jar with Spring boot and embedded Jetty.
 
-Firstly, you should create Spring Boot project. [SPRING INITIALIZR](http://start.spring.io) is convenient service to create project. Select maven project with java and spring boot 2.0.2 and add spring boot starter web dependency. And click to generate project
+Firstly, you should create Spring Boot project. [SPRING INITIALIZR](http://start.spring.io) is convenient service to create project. Select maven project with java and spring boot 2.0.6 and add spring boot starter web dependency. And click to generate project
 
 Further,  open new project in your favorite IDE.
 
-I use embedded Jetty as Java Servlet Container which ships with spring boot starter web. Jetty require some dependencies to render jsp view. I use tomcat-embed-jasper library. It is more fast than Jetty's one. Add this dependencies to pom.xml:
+I use embedded Jetty as Java Servlet Container. Jetty require some dependencies to render jsp view. I use tomcat-embed-jasper library. It is more fast than Jetty's one. Add this dependencies to pom.xml:
 
    		<!-- JSP support -->
 		<dependency>
